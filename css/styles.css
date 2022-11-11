@@ -331,22 +331,18 @@ body {
 }
 
 .activity-link {
-    display: block;
-}
-
-.overlay-text {
-    font-weight: 700;
-    font size: 14px;
-    line height: calc(16 / 14);
-    letter spacing: 3%;
-}
-
-.activities-wrap {
     position: relative;
+    text-align: center;
+    font-weight: 700;
+    color: var(--main-white-color);
 }
 
 .overlay-box {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
 }
 
