@@ -13,6 +13,8 @@
     --main-icon-color: #AFB1B8;
     --active-btn-bgr: #188CE8;
     --ul-items-gap: 30px;
+    --transition-dur: 250ms;
+    --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -124,7 +126,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-text-color);
 
-    transition: ;
+    transition-property: color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
 }
 
 .header-nav-list .header-nav-link:hover,
@@ -165,6 +169,10 @@ body {
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--another-text-color); 
+
+    transition-property: color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
 }
 
 .contacts-list-item {
@@ -252,6 +260,10 @@ body {
     letter-spacing: 0.06em;
     color: var(--main-white-color);
     background-color: var(--accent-color);
+
+    transition-property: background-color, box-shadow;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
 }
 
 .order-btn:hover,
@@ -422,6 +434,10 @@ body {
     align-items: center;
     width: 44px;
     height: 44px;
+
+    transition-property: background-color, border-radius;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
 }
 
 .social-link:hover,
@@ -453,6 +469,10 @@ body {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition-property: border, fill;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
 }
 
 .client-link-icon {
@@ -501,6 +521,10 @@ body {
     font-style: normal;
     font-family: inherit;
     font-size: 14px;
+
+    transition-property: color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
 }
 
 .footer-contacts-link:hover,
@@ -642,6 +666,10 @@ body {
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
 }
 
 .filtr-btn-item + .filtr-btn-item {
@@ -697,6 +725,10 @@ body {
 
 .project-link {
     display: block;
+
+    transition-property: box-shadow;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
 }
 
 .project-link:hover,
@@ -718,7 +750,7 @@ body {
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
 
-    transition: transform 250ms;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover .overlay-project,
